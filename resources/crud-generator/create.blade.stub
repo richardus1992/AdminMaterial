@@ -1,0 +1,35 @@
+@extends('backend.layout.master')
+@section('content')
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+
+    <h1>Create New %%modelName%%</h1>
+    <hr/>
+
+            {!! Form::open(['url' => '/%%routeGroup%%%%viewName%%', 'class' => 'form-horizontal', 'files' => true]) !!}
+
+                %%formFieldsHtml%%
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="form-line">
+                                {!! Form::submit('Create', ['class' => 'btn btn-primary form-control']) !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {!! Form::close() !!}
+
+            @if ($errors->any())
+                <ul class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            @endif
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

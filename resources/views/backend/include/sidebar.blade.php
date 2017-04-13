@@ -42,21 +42,21 @@
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="pages/ui/alerts.html">Token Pulsa Listrik</a>
+                            <a href="{{URL::to('BackEnd/crud-saja')}}">Crud Saja Tanpa Model</a>
                         </li>
                         <li>
-                            <a href="pages/ui/animations.html">Pulsa</a>
+                            <a href="">Pulsa</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="pages/typography.html">
+                    <a href="">
                         <i class="material-icons">text_fields</i>
                         <span>Typography</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="">
                         <i class="material-icons">layers</i>
                         <span>Helper Classes</span>
                     </a>

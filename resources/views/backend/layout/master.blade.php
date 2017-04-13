@@ -26,8 +26,6 @@
 <!-- #END# Page Loader -->
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
-<!-- #END# Overlay For Sidebars -->
-<!-- Search Bar -->
 <div class="search-bar">
     <div class="search-icon">
         <i class="material-icons">search</i>
@@ -40,7 +38,11 @@
 <!-- #END# Search Bar -->
 @include('backend.include.topbar')
 @include('backend.include.sidebar')
-@yield('content')
+<section class="content">
+    <div class="container-fluid">
+        @yield('content')
+    </div>
+</section>
 
 @include('backend.include.scriptjs')
 </body>

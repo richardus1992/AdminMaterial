@@ -16,3 +16,4 @@
 //});
 
 Route::get('/','TestControll@index');
+Route::resource('BackEnd/crud-saja', 'BackEnd\CrudSajaController');
